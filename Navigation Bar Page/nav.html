@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar </title>
+    <link rel="stylesheet" href="navss.css">
+</head>
+<body>
+      <div class="nav-bar">
+        <img src="navlogo.png">
+        <div class="menu-right">
+            <span onclick="myfunction()">&#9776;</span>
+        <ul id="menu">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+
+        </ul>
+        </div>
+      </div>
+      <div>
+        <marquee> <i>Navigation Bar</i> </marquee>
+      </div>
+      <div class="img">
+        <image src="navimg.jpg" alt="image inserted" ></image>
+      </div>
+      <script>
+        function myfunction(){
+            var x=document.getElementById("menu");
+            if(x.style.display=="block"){
+                x.style.display="none";
+
+            }
+            else{
+                x.style.display="block";
+
+            }
+        }
+//         style: This is a property of the element object that refers to its entire style object, which contains all the CSS styles applied to the element. You can access and modify individual CSS properties within this object using dot notation (e.g., element.style.color = "red").
+// display: This is a specific property within the element's style object that controls how the element is displayed on the page (e.g., block, inline, none). You can access and modify it using element.style.display = "block".
+      </script>
+
+</body>
+</html>
